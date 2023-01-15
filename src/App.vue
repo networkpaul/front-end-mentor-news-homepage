@@ -117,6 +117,7 @@ body {
 }
 
 .header-menuMobile {
+  padding-top: 30px;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -130,6 +131,8 @@ body {
   height: calc(100vh + 10px);
   z-index: 999;
   overflow: hidden;
+  -webkit-box-shadow: -15px 0px 15px 25px rgba(0,0,0,0.75); 
+  box-shadow: -400px 0px 15px 25px rgba(0,0,0,0.75);
 }
 
 .menuOpen .header-menuMobile {
@@ -174,6 +177,10 @@ body {
   transition: all 0.4s;
 }
 
+.header-menuLinksMobile:hover,:active {
+  color: #F15D51;
+}
+
 .header-menuLinks-container {
   display: flex;
   flex-direction: column;
@@ -190,7 +197,7 @@ body {
 .hamburgerClose {
   display: none;
   margin: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
   width: fit-content;
   background-color: transparent;
   border: none;
@@ -286,7 +293,6 @@ body {
 
 .news-newArticlesTitle {
   margin: 32px 24px;
-  /* margin-bottom: 0; */
   font-size: 40px;
   line-height: 1;
   font-weight: 700;
@@ -338,6 +344,14 @@ body {
 
   .hamburgerClose {
     display: flex;
+  }
+
+  .news-textContainer {
+    gap: 30px;
+  }
+
+  .news-featuredArticleContainer {
+    gap: 30px;
   }
 }
 
