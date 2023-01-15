@@ -23,8 +23,8 @@ export default {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: 350px;
-    height: 129px;
+    width: 33%;
+    min-width: 363px;
 }
 
 .topArticle-imageWrapper {
@@ -73,5 +73,13 @@ export default {
     line-height: 26px;
     font-weight: 400;
     color: #5E607A;
+}
+
+@media only screen and (max-width: 1200px) {
+    .topArticle-container {
+        width: 50%;
+        justify-content: space-evenly;
+        row-gap: 30px;
+    }
 }
 </style>
